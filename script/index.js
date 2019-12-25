@@ -4,8 +4,8 @@ const mainPage = document.getElementById('page').children;
 const footer = document.getElementsByTagName('footer')[0];
 
 const setInitialSizes = () => {
-    originalHeaderSize = window.innerHeight / 10 + "px";
-    header.style.height = originalHeaderSize;
+    originalHeaderSize = window.innerHeight / 10;
+    header.style.height = originalHeaderSize + "px";
     
     mainPage[0].style.minHeight = window.innerHeight + "px";
     mainPage[0].style.paddingTop = Number(header.style.height.split("px")[0]) + "px";
@@ -20,11 +20,14 @@ setInitialSizes();
 window.onresize = setInitialSizes;
 
 const resizeHeader = (event) => {
-    if(event.target.scrollTop >= Number(header.style.height.split("px")[0])) {
-        header.style.height = originalHeaderSize / 2;
+    console.log(document.documentElement.scrollTop);
+    console.log(Number(header.style.height.split("px")[0]));
+    console.log(document.documentElement.scrollTop >= Number(header.style.height.split("px")[0]));
+    if(document.documentElement.scrollTop >= Number(header.style.height.split("px")[0])) {
+        header.style.height = originalHeaderSize / 2 + "px";
     } else {
-        header.style.height = originalHeaderSize;
+        header.style.height = originalHeaderSize + "px";
     }
 }
 
-document.documentElement.onscroll = resizeHeader;
+window.onscroll = resizeHeader;

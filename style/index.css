@@ -13,7 +13,7 @@ article > * {
 #intro {
     background: url('/img/background1.png') no-repeat #1b3125;
     background-size: contain;
-    background-position: bottom;
+    background-position: right bottom;
     
     color: #ffffff;
 }
@@ -95,7 +95,7 @@ article > * {
 #body {
     background: url('/img/background2.png') no-repeat #245871;
     background-size: contain;
-    background-position: top;
+    background-position: right top;
     
     color: #ffffff;
 }

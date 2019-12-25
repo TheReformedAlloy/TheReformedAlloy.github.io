@@ -27,17 +27,52 @@ a:visited {
 }
 
 header {
+    display: flex;
+    align-items: center;
+    
     position: fixed;
     z-index: 2;
     width: 100%;
-    padding: 1em;
+    padding: 0 5%;;
     box-sizing: border-box;
     border-radius: 1px;
     box-shadow: 0 0 5px black;
     background-color: #ffffff;
     
+    font-size: 1.5em;
+}
+
+header #logo {
+    font-weight: bold;
 }
 
 header img {
     height: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    
+    height: 100%;
+    
+    margin: 5%;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    box-sizing: border-box;
+    
+    border-radius: 1px;
+    
+    text-align: center;
+}
+
+nav a:hover {
+    border-bottom: 3px solid black;
+    box-shadow: 0 0 1px black;
 }
