@@ -1,0 +1,60 @@
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+section {padding: 1em}
+
+section p {
+    max-width: 720px;
+    margin-left: 3em;
+    
+    text-indent: 3em;
+}
+
+.content, .smallContent {
+    box-sizing: border-box;
+    
+    color: #ffffff;
+}
+
+.projectIcon {width: 2rem}
+
+#intro {
+    background: url('/img/background3.png') no-repeat #33a769;
+    background-size: 100%;
+    background-position: bottom;
+    
+    color: #ffffff;
+}
+
+#intro h1 {text-align: center}
+
+#intro p {font-size: 1.5em}
+
+#groupme {
+    background: url('/img/background7.png') no-repeat #337396;
+    background-size: 35%;
+    background-position: bottom right;
+}
+
+#sidekick {
+    background: url('/img/background7.png') no-repeat #eca148;
+    background-size: 35%;
+    background-position: bottom right;}
+
+#emp {
+    background: url('/img/background7.png') no-repeat #ec6d46;
+    background-size: 35%;
+    background-position: bottom right;
+}
+
+footer {
+    background-color: #db481d;
+    
+    color: #a8300e;
+}
+
+footer a {color: #ff9070}
+
+footer a:hover {color: #ffffff}

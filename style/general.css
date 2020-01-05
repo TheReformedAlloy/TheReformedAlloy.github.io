@@ -14,11 +14,13 @@ h3 {font-size: 1.25em;}
 a {
     text-decoration: none;
     color: #000000;
+    
+    transition: color 500ms ease-out;
 }
 
 a:hover {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
 
 a:visited {
@@ -40,6 +42,8 @@ header {
     background-color: #ffffff;
     
     font-size: 1.5em;
+    
+    transition: height 250ms;
 }
 
 header #logo {
@@ -67,12 +71,61 @@ nav a {
     flex-grow: 1;
     box-sizing: border-box;
     
+    
+    border-bottom: 3px solid transparent;
     border-radius: 1px;
+    
+    text-align: center;
+    
+    transition: border-color 500ms;
+}
+
+nav a:hover {
+    border-color: black;
+    box-shadow: 0 0 1px black;
+}
+
+.buttonLink {
+    display: inline-block;
+    
+    padding: .5em;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 0 2px black;
+    
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    
+    transition: background-color 500ms;
+}
+
+.buttonLink:hover {background-color: #bbbbbb;}
+
+.title, .subtitle {
+    display: flex;
+    justify-content: center;
+    
+    background-color: #ffffff;
+    box-shadow: 0 0 5px black;
+    z-index: 1;
+}
+
+.title h1 {
+    font-size: 4.5em;
+}
+
+.subtitle h1 {
+    font-size: 2em;
+}
+
+footer {
+    padding: 1em;
     
     text-align: center;
 }
 
-nav a:hover {
-    border-bottom: 3px solid black;
-    box-shadow: 0 0 1px black;
+footer a {
+    transition: color 500ms ease-out;
 }

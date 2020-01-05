@@ -1,0 +1,29 @@
+#supportMe {
+    display: flex;
+    align-items: center;
+    
+    padding: 2em;
+    background: url('/img/background2.png') no-repeat #634a38;
+    background-size: 25%;
+    background-position: top left;
+}
+
+#supportMe > * {
+    width: 50%;
+}
+
+#invite {
+    text-align: center;
+    
+    color: #ffffff;
+}
+
+footer {
+    background-color: #583822;
+    
+    color: #42240f;
+}
+
+footer a {color: #93745d}
+
+footer a:hover {color: #ffffff}
